@@ -167,4 +167,3 @@ with tab4:
 # Footer
 st.markdown("---")
 st.markdown("Built using Streamlit specifically for BlockseBlock Hackathon | This analysis is performed on generated data and not on official data by any registered Company")
-st.markdown("Made by Anubhav Jain")
