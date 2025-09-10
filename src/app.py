@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
-from src.utils.analytics import calculate_metrics, get_top_performers, calculate_roi_by_dimension, get_optimization_recommendations
+from utils.analytics import calculate_metrics, get_top_performers, calculate_roi_by_dimension, get_optimization_recommendations
 
 # Page configuration
 st.set_page_config(
@@ -17,7 +17,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('src/data/ads_data.csv')
+        df = pd.read_csv('src/ads_data.csv')
         df['date'] = pd.to_datetime(df['date'])
         return calculate_metrics(df)
     except:

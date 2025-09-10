@@ -1,6 +1,6 @@
 # 🎯 Social Media Ad Campaign Optimizer
 
-A data-driven Streamlit dashboard for analyzing and optimizing social media advertising campaigns to maximize ROI and ROAS.
+A data-driven Streamlit dashboard for analyzing and optimizing social media advertising campaigns to maximize ROI (Return on Investment) and ROAS (Return on Ad Spend).
 
 ## Features
 
@@ -8,20 +8,45 @@ A data-driven Streamlit dashboard for analyzing and optimizing social media adve
 - **🔍 Granular Analysis**: Drill down by platform, campaign, audience, and time
 - **🎯 AI-Powered Recommendations**: Data-driven optimization suggestions
 - **📈 ROI & ROAS Tracking**: Comprehensive return on investment analysis
-- **💰 Indian Rupee Support**: All monetary values displayed in ₹
 - **📋 Data Export**: Export filtered data for further analysis
 
-## 🚀 Live Demo
+# 🚀 Live Demo
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-username-social-media-optimizer.streamlit.app/)
+[ https://social-media-optimizer.streamlit.app/ ]
 
 ## 🛠️ Installation & Setup
+### 1.Open Command Prompt in the root folder
+- **Windows**: Press `Windows + R`, type `cmd`, press Enter
+- **Mac**: Press `Command + Space`, type `Terminal`, press Enter
 
-### Prerequisites
-- Python 3.8+
-- pip package manager
+### 2. Navigate to Project Folder
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/social-media-optimizer.git
-cd social-media-optimizer
+cd path/to/social-media-optimizer
+
+
+### 3. Install Dependencies
+
+pip install requirements.txt
+
+
+### 4. Generate Data
+
+python generate_data.py OR Add your own data with customization in app.py, analytics.py for variable name change
+
+
+### 5. Run Dashboard Locally
+
+streamlit run app.py
+Open http://localhost:8501 in your browser
+
+
+### Clone the Repository
+git clone https://github.com/anubhavjain1000/social-media-ads-optimizer.git
+cd social-media-ads-optimizer
+
+-----------------------------------------------------------------------
+
+
+
+
+
