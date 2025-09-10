@@ -31,7 +31,7 @@ pip install requirements.txt
 
 ### 4. Generate Data
 
-python generate_data.py
+python generate_data.py OR Add your own data with customization in app.py,analytics.py for variable name change
 
 
 ### 5. Run Dashboard Locally
