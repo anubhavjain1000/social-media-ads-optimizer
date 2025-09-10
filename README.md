@@ -1,6 +1,6 @@
 # 🎯 Social Media Ad Campaign Optimizer
 
-A data-driven Streamlit dashboard for analyzing and optimizing social media advertising campaigns to maximize ROI and ROAS.
+A data-driven Streamlit dashboard for analyzing and optimizing social media advertising campaigns to maximize ROI(Return on Investment) and ROAS(Return on Ad Spend)
 
 ## Features
 
