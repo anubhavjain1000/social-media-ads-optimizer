@@ -12,8 +12,8 @@ A data-driven Streamlit dashboard for analyzing and optimizing social media adve
 
 # 🚀 Live Demo
 
-(https://social-media-ads-optimizer.streamlit.app/)
 (https://huggingface.co/spaces/AJ90/social-media-ads-optimizer)
+(https://social-media-ads-optimizer.streamlit.app/)
 
 ## 🛠️ Installation & Setup
 ### 1.Open Command Prompt in the root folder
