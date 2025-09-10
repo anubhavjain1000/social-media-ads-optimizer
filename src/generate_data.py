@@ -102,5 +102,5 @@ def generate_ads_data(n=10000):
 
 if __name__ == "__main__":
     df = generate_ads_data(10000)
-    df.to_csv('ads_data.csv', index=False)
+    df.to_csv('src/data/ads_data.csv', index=False)
     print(f"Generated dataset with {len(df)} rows saved to ads_data.csv")
