@@ -41,8 +41,8 @@ Open http://localhost:8501 in your browser
 
 
 ### Clone the Repository
-git clone https://github.com/anubhavjain1000/social-media-optimizer.git
-cd social-media-optimizer
+git clone https://github.com/anubhavjain1000/social-media-ads-optimizer.git
+cd social-media-ads-optimizer
 
 -----------------------------------------------------------------------
 
