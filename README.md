@@ -12,21 +12,24 @@ A data-driven Streamlit dashboard for analyzing and optimizing social media adve
 
 # 🚀 Live Demo
 
-[ https://social-media-optimizer.streamlit.app/ ]
+(https://social-media-ads-optimizer.streamlit.app/)
+(https://huggingface.co/spaces/AJ90/social-media-ads-optimizer)
 
 ## 🛠️ Installation & Setup
 ### 1.Open Command Prompt in the root folder
 - **Windows**: Press `Windows + R`, type `cmd`, press Enter
 - **Mac**: Press `Command + Space`, type `Terminal`, press Enter
 
-### 2. Navigate to Project Folder
+### 2. Navigate to Project Folder and create env
 
-cd path/to/social-media-optimizer
+cd path/to/social-media-ads-optimizer
 
+python -m venv venv
+venv\Scripts\activate
 
 ### 3. Install Dependencies
 
-pip install requirements.txt
+pip install -r requirements.txt
 
 
 ### 4. Generate Data
