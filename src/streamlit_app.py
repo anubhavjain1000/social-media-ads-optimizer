@@ -3,7 +3,16 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
-from src.utils.analytics import calculate_metrics, get_top_performers, calculate_roi_by_dimension, get_optimization_recommendations
+
+try:
+    from src.utils.analytics import calculate_metrics, get_top_performers, calculate_roi_by_dimension, get_optimization_recommendations
+except ImportError:
+    try:
+        # For Streamlit Cloud (no src folder)
+        from utils.analytics import calculate_metrics, get_top_performers, calculate_roi_by_dimension, get_optimization_recommendations
+    except ImportError:
+        st.error("Could not import analytics functions. Please check utils/analytics.py exists.")
+
 
 # Page configuration
 st.set_page_config(
@@ -17,11 +26,18 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('src/data/ads_data.csv')
+        # Try multiple paths for different environments
+        try:
+            # Local development path
+            df = pd.read_csv('src/data/ads_data.csv')
+        except:
+            # Streamlit Cloud path (no src folder)
+            df = pd.read_csv('data/ads_data.csv')
+        
         df['date'] = pd.to_datetime(df['date'])
         return calculate_metrics(df)
-    except:
-        st.error("Data file not found. Please run generate_data.py first.")
+    except Exception as e:
+        st.error(f"Error loading data: {str(e)}")
         return pd.DataFrame()
 
 df = load_data()
